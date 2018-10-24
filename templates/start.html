@@ -33,8 +33,12 @@
         <p class="lead">Search by series of the most popular American sitcom.</p>
         <p class="lead">
           <form action="/results" method="GET">
-            <p><input type="search" name="query"> 
-            <input type="submit" value="Search"></p>
+            <p><input type="search" name="query"></p>
+            <p><select name="method">
+              <option value="inverted_index">Inverted Index</option>
+              <option value="word2vec">Word2Vec</option>
+            </select></p>
+            <p><input type="submit" value="Search"></p>
           </form>
         </p>
       </main>
